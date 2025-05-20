@@ -15,3 +15,19 @@ for i in range(len(num)): # so we use this range(len(num)) its take a undex of l
         if num[i] + num[j] == target: 
             print(f"{num[i]} + {num[j]} = {target}")
             print(f"[{i}, {j}]")
+
+
+
+
+#with class and function
+class Solution:
+    def twoSum(self, num: List[int], target: int) -> List[int]:
+        for i in range(len(num)):
+            for j in range(i + 1, len(num)):
+                if num[i] + num[j] == target:
+                    return [i, j]
+
+sol = Solution()
+num = [2, 7, 11, 15]
+target = 9
+print(sol.twoSum(num, target))

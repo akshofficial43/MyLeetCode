@@ -28,6 +28,6 @@ class Solution:
                     return [i, j]
 
 sol = Solution()
-num = [2, 7, 11, 15]
-target = 9
+num = [int(x) for x in input("enter number = ").split()]
+target = int(input("enter target = "))
 print(sol.twoSum(num, target))

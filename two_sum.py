@@ -11,7 +11,7 @@ target = int(input("enter target = "))
 # we cant acces with index of list with this 'i' like num[i]
 for i in range(len(num)): # so we use this range(len(num)) its take a undex of list in 'i', here len = 4 so range is 4=[0,1,2,3] so avoid repetion
     # if target - i in num: # 2, 3, 4
-    for j in range(i + 1, len(num)): # here j is always j > i ([0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3], [2,4], [3,4]) thats why avois repeat 
+    for j in range(i + 1, len(num)): # here j is always j > i ([0,1],[0,2],[0,3],[0,4],[1,2],[1,3],[1,4],[2,3], [2,4], [3,4]) thats why avoid repeat 
         if num[i] + num[j] == target: 
             print(f"{num[i]} + {num[j]} = {target}")
             print(f"[{i}, {j}]")
